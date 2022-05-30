@@ -11,8 +11,7 @@ export const StyledHeader = styled.header`
   background-color: ${(props) => props.theme.pallete.primary.main};
   p {
       font-weight: 600;
-      color: ${(props) => props.theme.pallete.white};
+      color: ${(props) => props.theme.pallete.common.white};
   }
-  color: ${(props) => props.theme.pallete.white};
   width: 100%;
 `
