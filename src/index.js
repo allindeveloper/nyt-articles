@@ -1,17 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import reportWebVitals from './reportWebVitals';
-import { ThemeProvider } from 'styled-components';
-import { myTheme } from './styles/theme';
-import { MainContainer } from './components/container/MainContainer';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import reportWebVitals from "./reportWebVitals";
+import { ThemeProvider } from "styled-components";
+import { myTheme } from "./styles/theme";
+import { MainContainer } from "./components/container/MainContainer";
+import { BrowserRouter } from "react-router-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <ThemeProvider theme={myTheme} >
-      <MainContainer />
-    </ThemeProvider>
-  </React.StrictMode>
+    <BrowserRouter>
+      <ThemeProvider theme={myTheme}>
+        <MainContainer />
+      </ThemeProvider>
+    </BrowserRouter>
+  </React.StrictMode>,
 );
 
 // If you want to start measuring performance in your app, pass a function
